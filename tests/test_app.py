@@ -11,7 +11,7 @@ def test_home(client):
 
 def test_home_page_content_type(client):
 	response = client.get('/')
-	assert response.content_type = 'text/html; charset=utf-8'
+	assert response.content_type == 'text/html; charset=utf-8'
 
 def test_post_method_not_allowed(client):
 	response = client.post('/')
